@@ -1,0 +1,1 @@
+DELETE FROM tbl_employee WHERE emp_id=1

@@ -13,31 +13,30 @@ func main() {
 
 	r.GET("/employee", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
-			"message": "P nut ya ooor",
+			"message": "Get Employee",
 		})
 	})
 
 	//-----------POSE--------------
 
-	r.POST("/topten", func(c *gin.Context) {
+	r.POST("/employee", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
-			"message": "dadaiaijdajdjadjagtoperro",
+			"message": "Past employee",
 		})
 	})
 	//----------PUT-------------------
-	r.PUT("/MM", func(c *gin.Context) {
+	r.PUT("/employee", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
-			"message": "P nut ya ooor",
+			"message": "Put Employee",
 		})
 	})
 
 	//-----------DELETE--------------
 
-	r.DELETE("/NUT", func(c *gin.Context) {
+	r.DELETE("/employee", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
-			"message": "dadaiaijdajdjadjagtoperro",
+			"message": "Delete Employee",
 		})
 	})
 	r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
-	}
-
+}
